@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f5f5f7;
-      color: #1d1d1f;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
-    .profile-img {
-      max-width: 200px;
-      border-radius: 50%;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    .company-logo {
-      max-width: 100px;
-      transition: transform 0.3s;
-    }
-    .company-logo:hover {
-      transform: scale(1.1);
-    }
-    .description {
-      font-size: 1.1rem;
-      color: #6e6e73;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body>
-  <div class="container text-center py-5">
-    <img src="foto-anda.jpg" alt="Foto Saya" class="profile-img mb-4">
-    <h1 class="mb-3">Nama Anda</h1>
-    <p class="description mb-5">Desainer modern dengan pengalaman bekerja di berbagai perusahaan teknologi ternama.</p>
+  <!-- Header -->
+  <header class="bg-white shadow p-6 flex items-center justify-between">
+    <h1 class="text-2xl font-bold">John Doe</h1>
+    <nav class="space-x-6 text-lg">
+      <a href="#" class="hover:text-blue-600">Home</a>
+      <a href="#" class="hover:text-blue-600">About</a>
+      <a href="#" class="hover:text-blue-600">Skills</a>
+      <a href="#" class="hover:text-blue-600">Projects</a>
+      <a href="#" class="hover:text-blue-600">Contact</a>
+    </nav>
+  </header>
 
-    <div class="row justify-content-center g-4">
-      <div class="col-4 col-md-2">
-        <a href="https://perusahaan1.com" target="_blank">
-          <img src="logo-perusahaan1.png" alt="Perusahaan 1" class="company-logo">
-        </a>
+  <!-- Hero Section -->
+  <section class="bg-blue-100 text-center py-20 px-4">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm John Doe</h2>
+    <p class="text-xl mb-6 max-w-2xl mx-auto">A passionate Full Stack Developer crafting web experiences that blend functionality with creativity.</p>
+    <a href="#" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700 transition">Hire Me</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 bg-white text-center">
+    <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+    <div class="max-w-3xl mx-auto text-lg">
+      <p>Hello! I'm a developer who specializes in building high-quality web applications. I enjoy learning new technologies and applying them to real-world projects.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-16 px-6 bg-gray-50 text-center">
+    <h3 class="text-3xl font-semibold mb-8">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-lg">
+      <div class="bg-white shadow p-4 rounded">HTML</div>
+      <div class="bg-white shadow p-4 rounded">CSS</div>
+      <div class="bg-white shadow p-4 rounded">JavaScript</div>
+      <div class="bg-white shadow p-4 rounded">React</div>
+      <div class="bg-white shadow p-4 rounded">Node.js</div>
+      <div class="bg-white shadow p-4 rounded">Tailwind</div>
+      <div class="bg-white shadow p-4 rounded">Git</div>
+      <div class="bg-white shadow p-4 rounded">SQL</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-16 px-6 bg-white text-center">
+    <h3 class="text-3xl font-semibold mb-10">Projects</h3>
+    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <img src="https://placehold.co/300x200" alt="Project 1" class="mb-4 rounded">
+        <h4 class="text-xl font-semibold mb-2">Project One</h4>
+        <p>A brief description of the project highlighting its purpose and technologies used.</p>
       </div>
-      <div class="col-4 col-md-2">
-        <a href="https://perusahaan2.com" target="_blank">
-          <img src="logo-perusahaan2.png" alt="Perusahaan 2" class="company-logo">
-        </a>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <img src="https://placehold.co/300x200" alt="Project 2" class="mb-4 rounded">
+        <h4 class="text-xl font-semibold mb-2">Project Two</h4>
+        <p>A brief description of the project highlighting its purpose and technologies used.</p>
       </div>
-      <div class="col-4 col-md-2">
-        <a href="https://perusahaan3.com" target="_blank">
-          <img src="logo-perusahaan3.png" alt="Perusahaan 3" class="company-logo">
-        </a>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <img src="https://placehold.co/300x200" alt="Project 3" class="mb-4 rounded">
+        <h4 class="text-xl font-semibold mb-2">Project Three</h4>
+        <p>A brief description of the project highlighting its purpose and technologies used.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Contact Section -->
+  <section class="py-16 px-6 bg-blue-100 text-center">
+    <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+    <p class="mb-6 text-lg">Have a project in mind or just want to say hi? Drop me a message!</p>
+    <a href="mailto:john@example.com" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700 transition">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-6 text-sm text-gray-500">
+    &copy; 2025 John Doe. All rights reserved.
+  </footer>
+
 </body>
-
 </html>
